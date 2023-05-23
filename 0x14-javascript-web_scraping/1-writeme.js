@@ -4,7 +4,8 @@
 const fs = require('fs');
 
 function writeFileContent(filePath, content) {
-  fs.writeFile(filePath, content, 'utf-8', (error) => {
+  const newLine = "\n"
+  fs.writeFile(filePath, content + newLine, 'utf-8', (error) => {
     if (error) {
       console.error(error);
     } else {
