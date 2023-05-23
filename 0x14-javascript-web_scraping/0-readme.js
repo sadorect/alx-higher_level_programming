@@ -13,5 +13,9 @@ function printFileContent(filePath) {
   });
 }
 
-const filePath = 'path/to/your/file.txt';
+// Get the file path from command line arguments
+const args = process.argv.slice(2);
+const filePath = args[0];
+
+
 printFileContent(filePath);
