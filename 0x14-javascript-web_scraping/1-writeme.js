@@ -4,11 +4,11 @@ This script writes a provided string to a named file
 */
 'use strict';
 
-const fs = require('fs');
+import { writeFile } from 'fs';
 
 function writeFileContent(filePath, content) {
   const newLine = "\n"
-  fs.writeFile(filePath, content + newLine, 'utf-8', (error) => {
+  writeFile(filePath, content + newLine, 'utf-8', (error) => {
     if (error) {
       console.error(error);
     } else {
