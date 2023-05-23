@@ -1,4 +1,7 @@
 #!/usr/bin/node
+/*
+This script writes a provided string to a named file
+*/
 'use strict';
 
 const fs = require('fs');
